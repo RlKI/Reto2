@@ -7,7 +7,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-textarea [(ngModel)]="textedNames"></ion-textarea>
+  <ion-item>
+    <ion-textarea [(ngModel)]="textedNames"></ion-textarea>
+  </ion-item>
+
+
   <div class="ion-padding">
     <ion-button color="primary" (click)="rollClick();">Roll!</ion-button>
     <br>
