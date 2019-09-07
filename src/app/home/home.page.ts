@@ -10,7 +10,7 @@ export class HomePage {
 
   arrayNames: string[];
   outputName: string = "";
-  textedNames: string = "";
+  textedNames: string = "ESTOS, SON, NOMBRE, DE, PRUEBA";
   interval;
 
   constructor() { }
@@ -21,7 +21,7 @@ export class HomePage {
     this.arrayNames = this.textedNames.split(",");
     let maxNumber = this.arrayNames.length; - 1;
     this.interval = setInterval(() => {
-      this.outputName = this.arrayNames[Math.floor(Math.random() * maxNumber)];
+      this.outputName = this.arrayNames[Math.floor(Math.random() * maxNumber)].toUpperCase().trim();
       n--;
       if (n < 0 && this.interval) {
         clearInterval(this.interval);
